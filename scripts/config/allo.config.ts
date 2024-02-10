@@ -123,4 +123,19 @@ export const alloConfig: DeployParams = {
     percentFee: 0,
     baseFee: 0,
   },
+  313371: {
+    // second account of the test mnemonic
+    owner: "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+    treasury: "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+    percentFee: 0,
+    baseFee: 0,
+  },
+  // dev2
+  313372: {
+    // second account of the test mnemonic
+    owner: "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+    treasury: "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+    percentFee: 0,
+    baseFee: 0,
+  },
 };

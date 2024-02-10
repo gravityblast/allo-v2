@@ -12,7 +12,12 @@ export async function deployContractFactory() {
   const chainId = Number(network.chainId);
   const account = (await ethers.getSigners())[0];
   const deployerAddress = await account.getAddress();
-  const blocksToWait = networkName === "localhost" ? 0 : 5;
+  const blocksToWait =
+    networkName === "localhost" ||
+    networkName === "dev1" ||
+    networkName === "dev2"
+      ? 0
+      : 5;
   const balance = await ethers.provider.getBalance(deployerAddress);
 
   const deploymentIo = new Deployments(chainId, "contractFactory");

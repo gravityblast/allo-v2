@@ -72,4 +72,14 @@ export const registryConfig: DeployParams = {
   11155420: {
     owner: "0x8C180840fcBb90CE8464B4eCd12ab0f840c6647C",
   },
+  // dev1
+  313371: {
+    // second account of the test mnemonic
+    owner: "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+  },
+  // dev2
+  313372: {
+    // second account of the test mnemonic
+    owner: "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+  },
 };

@@ -16,9 +16,20 @@ import "solidity-coverage";
 
 dotenv.config();
 
+function getEnvVarNumber(name: string, defaultValue: number): number {
+  const value = process.env[name];
+  if (value !== undefined) {
+    return parseInt(value);
+  }
+
+  return defaultValue;
+}
+
 const chainIds = {
   // local network
   localhost: 31337,
+  dev1: getEnvVarNumber("DEV1_CHAIN_ID", 313371),
+  dev2: getEnvVarNumber("DEV2_CHAIN_ID", 313372),
 
   // testnet
   goerli: 5,
@@ -231,6 +242,21 @@ const config: HardhatUserConfig = {
 
     // Local Networks
     localhost: createTestnetConfig("localhost", "http://localhost:8545"),
+
+    // dev1 is still a local chain but it's based on our dev environment
+    // with hardcoded deterministic addresses for deployed contracts
+    dev1: createTestnetConfig(
+      "dev1",
+      `http://${process.env.DEV1_CHAIN_HOST ?? "127.0.0.1"}:${
+        process.env.DEV1_CHAIN_PORT ?? 8545
+      }`
+    ),
+    dev2: createTestnetConfig(
+      "dev2",
+      `http://${process.env.DEV2_CHAIN_HOST ?? "127.0.0.1"}:${
+        process.env.DEV2_CHAIN_PORT ?? 8545
+      }`
+    ),
     hardhat: {
       // forking: {
       //   url: process.env.MAINNET,

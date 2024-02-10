@@ -1,6 +1,6 @@
 type CommonConfig = {
-  proxyAdminOwner?: string,
-  permit2Address: string,
+  proxyAdminOwner?: string;
+  permit2Address: string;
 };
 
 type DeployParams = Record<number, CommonConfig>;
@@ -84,6 +84,20 @@ export const commonConfig: DeployParams = {
   // Optimism Sepolia
   11155420: {
     proxyAdminOwner: "0x8C180840fcBb90CE8464B4eCd12ab0f840c6647C",
+    permit2Address: "0x000000000022D473030F116dDEE9F6B43aC78BA3",
+  },
+  // dev1
+  313371: {
+    // second account of the test mnemonic
+    proxyAdminOwner: "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+    // FIXME: deploy a real contract to the dev chain and replace the address below
+    permit2Address: "0x000000000022D473030F116dDEE9F6B43aC78BA3",
+  },
+  // dev2
+  313372: {
+    // second account of the test mnemonic
+    proxyAdminOwner: "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+    // FIXME: deploy a real contract to the dev chain and replace the address below
     permit2Address: "0x000000000022D473030F116dDEE9F6B43aC78BA3",
   },
 };

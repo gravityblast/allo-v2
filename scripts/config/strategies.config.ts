@@ -1,6 +1,6 @@
 // NOTE: Update this file anytime a new strategy is deployed. use fs to update file on deploy.
 // NOTE: version v1.0 for failed deployments we use a letter (a,b,c,..) to increment the deployment, not the version.
-// version format: v[number].[number][alphabet] 
+// version format: v[number].[number][alphabet]
 // - update number when strategy is updated
 // - update alphabet when strategy has to be redeployed
 
@@ -442,6 +442,20 @@ export const strategyConfig: DeployParams = {
     },
     "qv-impact-stream": {
       name: "QVImpactStreamStrategy",
+      version: "v1.0",
+    },
+  },
+  // dev1
+  313371: {
+    "donation-voting-merkle-distribution-direct": {
+      name: "DonationVotingMerkleDistributionDirectTransferStrategy",
+      version: "v1.0",
+    },
+  },
+  // dev2
+  313372: {
+    "donation-voting-merkle-distribution-direct": {
+      name: "DonationVotingMerkleDistributionDirectTransferStrategy",
       version: "v1.0",
     },
   },
