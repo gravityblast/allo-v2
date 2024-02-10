@@ -54,6 +54,16 @@
     "address": "0xE195743480D1591B79106FF9B296A0cD38aDa807",
     "deployerAddress": "0x8C180840fcBb90CE8464B4eCd12ab0f840c6647C"
   },
+  "313371": {
+    "name": "ContractFactory",
+    "address": "0x712516e61C8B383dF4A63CFe83d7701Bce54B03e",
+    "deployerAddress": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"
+  },
+  "313372": {
+    "name": "ContractFactory",
+    "address": "0x712516e61C8B383dF4A63CFe83d7701Bce54B03e",
+    "deployerAddress": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"
+  },
   "421614": {
     "name": "ContractFactory",
     "address": "0xE195743480D1591B79106FF9B296A0cD38aDa807",

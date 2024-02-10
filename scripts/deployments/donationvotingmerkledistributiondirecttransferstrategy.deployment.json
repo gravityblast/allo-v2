@@ -76,6 +76,20 @@
     "address": "0xD13ec67938B5E9Cb05A05D8e160daF02Ed5ea9C9",
     "deployerAddress": "0x8C180840fcBb90CE8464B4eCd12ab0f840c6647C"
   },
+  "313371": {
+    "id": "0x6f9291df02b2664139cec5703c124e4ebce32879c74b6297faa1468aa5ff9ebf",
+    "name": "DonationVotingMerkleDistributionDirectTransferStrategy",
+    "version": "v1.0",
+    "address": "0x3574b2e3eE1F948d61cB0b6B20cC19a63F56E2c4",
+    "deployerAddress": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"
+  },
+  "313372": {
+    "id": "0x6f9291df02b2664139cec5703c124e4ebce32879c74b6297faa1468aa5ff9ebf",
+    "name": "DonationVotingMerkleDistributionDirectTransferStrategy",
+    "version": "v1.0",
+    "address": "0x3574b2e3eE1F948d61cB0b6B20cC19a63F56E2c4",
+    "deployerAddress": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"
+  },
   "421614": {
     "id": "0x6f9291df02b2664139cec5703c124e4ebce32879c74b6297faa1468aa5ff9ebf",
     "name": "DonationVotingMerkleDistributionDirectTransferStrategy",

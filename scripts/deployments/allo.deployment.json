@@ -142,6 +142,32 @@
     "proxyAdmin": "0x758b87af7fdB4783f848a1dDEa1F025dC48B9858",
     "proxyAdminOwner": "0xB145b7742A5a082C4f334981247E148dB9dF0cb3"
   },
+  "313371": {
+    "name": "Allo",
+    "implementation": "0xbCF26943C0197d2eE0E5D05c716Be60cc2761508",
+    "proxy": "0x59F2f1fCfE2474fD5F0b9BA1E73ca90b143Eb8d0",
+    "treasury": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+    "percentFee": 0,
+    "baseFee": 0,
+    "registry": "0x948B3c65b89DF0B4894ABE91E6D02FE579834F8F",
+    "owner": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+    "deployerAddress": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+    "proxyAdmin": "0x71C95911E9a5D330f4D621842EC243EE1343292e",
+    "proxyAdminOwner": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"
+  },
+  "313372": {
+    "name": "Allo",
+    "implementation": "0xbCF26943C0197d2eE0E5D05c716Be60cc2761508",
+    "proxy": "0x59F2f1fCfE2474fD5F0b9BA1E73ca90b143Eb8d0",
+    "treasury": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+    "percentFee": 0,
+    "baseFee": 0,
+    "registry": "0x948B3c65b89DF0B4894ABE91E6D02FE579834F8F",
+    "owner": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+    "deployerAddress": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+    "proxyAdmin": "0x71C95911E9a5D330f4D621842EC243EE1343292e",
+    "proxyAdminOwner": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"
+  },
   "421614": {
     "name": "Allo",
     "implementation": "0xB087535DB0df98fC4327136e897A5985E5Cfbd66",
