@@ -69,7 +69,9 @@ export async function deployStrategies(
 
   deployments.write(objToWrite);
 
-  await verifyContract(impl, [...values]);
+  if (process.env.SKIP_VERIFICATION !== "true") {
+    await verifyContract(impl, [...values]);
+  }
 
   const validator = await new Validator(strategyName, impl);
   await validator.validate("getAllo", [], alloAddress);

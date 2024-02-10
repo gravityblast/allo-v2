@@ -84,8 +84,10 @@ export async function deployAllo() {
 
   deployments.write(objToWrite);
 
-  await verifyContract(instance.target.toString(), []);
-  await verifyContract(implementation, []);
+  if (process.env.SKIP_VERIFICATION !== "true") {
+    await verifyContract(instance.target.toString(), []);
+    await verifyContract(implementation, []);
+  }
 
   const validator = await new Validator("Allo", instance.target);
   await validator.validate("getRegistry", [], registryAddress);

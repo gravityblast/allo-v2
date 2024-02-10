@@ -70,8 +70,10 @@ export async function deployRegistry() {
 
   deployments.write(objToWrite);
 
-  await verifyContract(instance.target.toString(), []);
-  await verifyContract(implementation, []);
+  if (process.env.SKIP_VERIFICATION !== "true") {
+    await verifyContract(instance.target.toString(), []);
+    await verifyContract(implementation, []);
+  }
 
   const validator = await new Validator("Registry", instance.target);
   const ownerRole =
