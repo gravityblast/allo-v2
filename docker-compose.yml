@@ -1,0 +1,33 @@
+services:
+  local-chain-1:
+    image: ghcr.io/foundry-rs/foundry:nightly-b174c3a4f80938636f18b3c9e49d45e6643f64a9
+    ports:
+      - "127.0.0.1:8545:8545"
+    entrypoint: ["anvil", "--host", "0.0.0.0", "--chain-id", "313371"]
+
+  local-chain-2:
+    image: ghcr.io/foundry-rs/foundry:nightly-b174c3a4f80938636f18b3c9e49d45e6643f64a9
+    ports:
+      - "127.0.0.1:8546:8546"
+    entrypoint: ["anvil", "--host", "0.0.0.0", "--chain-id", "313372", "--port", "8546"]
+
+  allo-v2-setup:
+    image: allo-v2-setup
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    depends_on:
+      - local-chain-1
+      - local-chain-2
+    environment:
+      # account at index 1 of the test mnemonic
+      # test test test test test test test test test test test junk
+      - DEPLOYER_PRIVATE_KEY=0x59c6995e998f97a5a0044966f0945389dc9e86dae88c7a8412f4603b6b78690d
+      - DEV1_CHAIN_HOST=local-chain-1
+      - DEV1_CHAIN_ID=313371
+      - DEV1_CHAIN_PORT=8545
+      - DEV2_CHAIN_HOST=local-chain-2
+      - DEV2_CHAIN_ID=313372
+      - DEV2_CHAIN_PORT=8546
+    restart: "no"
+    entrypoint: [ "bash", "-c", "sleep 2 && ./scripts/dev/deployAllDevNetworks.sh"]
